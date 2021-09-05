@@ -1,5 +1,122 @@
-.navbar {
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("./Pictures/PageSpreadFilter.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+}
+
+#navbar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    transition: 0.55s;
+    padding-top: 10px;
+}
+
+#navbar a:hover {
+    color: #ffebc6;
+}
+
+.nav-menu {
+    list-style: none;
+    text-align: right;
+    padding: 1%;
+    font-size: x-large;
+}
+
+.nav-button {
+    display: inline-block;
+    padding-right: 3%;
+}
+
+.nav-button > a {
+    text-decoration: none;
+    color: white;
+}
+
+.home-div, .about-div, .skill-div, .proj-div {
+    height: 90vh;
+}
+
+.name-box {
+    margin: auto;
+    width: 30%;
+    color: white;
+    margin-top: 10%;
+    font-size: 450%;
+    margin-left: 5%;
+    padding-bottom: 10%;
+}
+
+.about-div {
+    background-color: #ffebc6;
+}
+
+.about-flex {
     display: inline-flex;
-    flex-direction: row;
-    color: brown;
+    width: 100%;
+    padding-top: 7%;
+}
+
+.about-image-div {
+    padding-left: 15%;
+    padding-right: 2%;
+}
+
+.about-desc-div {
+    padding-top: 2%;
+    padding-left: 2%;
+}
+
+.how-about-me {
+    font-size: 200%;
+}
+
+.about-me {
+    font-size: 125%;
+}
+
+.face-one {
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.skill-div {
+    background-color: #006c67;
+}
+
+.proj-div {
+    background-color: #ffebc6;
+}
+
+.contact-div {
+    background-color: #006c67;
+}
+
+/*  use these colors
+    midnight green      #003844
+    skobeloff           #006c67
+    blanched almond     #ffebc6
+*/
+
+.big-text {
+    font-size: 250%;
+    text-align: center;
+    padding-top: 5%;
+}
+
+@keyframes fadeInNav {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }

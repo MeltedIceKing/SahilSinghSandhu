@@ -1,60 +1,125 @@
+<!DOCTYPE html>
+<!-- Peeking at my code? 🤔, well then... peek all you want 😏 -->
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
     <title>Portfolio</title>
 </head>
 <body>
-    <nav class="nav-bar">
-        <div class="port-title">
-            Portfolio.
-        </div>
-        <div class="menu-bar">
-            Home
-            About
-            Skills
-            Projects
-            Contact
+
+    <!-- Navigation Bar -->
+    <nav class="nav-bar" id="navbar">
+        <div class="nav-div">
+            <ul class="nav-menu">
+                <li class="nav-button"><a href="#homesec">Home</a></li>
+                <li class="nav-button"><a href="#aboutsec">About</a></li>
+                <li class="nav-button"><a href="#skillsec">Skills</a></li>
+                <li class="nav-button"><a href="#projsec">Projects</a></li>
+                <li class="nav-button"><a href="#contactsec">Contact</a></li>
+            </ul>
         </div>
     </nav>
 
     <!-- Home Section -->
-    <section class="home-sec">
+    <section class="home-sec" id="homesec">
         <div class="home-div">
-            <h1><i>SAHIL SINGH</i></h1>
-            <h2>asdhas</h2>
+            <div class="name-box">
+                <h1 class="my-name"><i>SAHIL SINGH</i></h1>
+                <h3>Software Developer</h3>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section class="about-sec">
+    <section class="about-sec" id="aboutsec">
         <div class="about-div">
-
+            <h2 class="big-text">
+                About Me
+            </h2>
+            <div class="about-flex">
+                <div class="about-image-div">
+                    <img class="face-one" src="./Pictures/FaceOne.jpg" alt="FaceOne">
+                </div><div class="about-desc-div">
+                    <h1 class="how-about-me">Hey! I'm Sahil Singh.</h1><br>
+                    <span class="about-me">
+                        I am a BCIT CIT Co-Op Student. <br>
+                        I like working on web development, game development, and database management. <br>
+                        I love spending my time learning new things, whether those thing may be irrelevant <br>
+                        like how tall the average squirrel is or even something important like the proper <br>
+                        way to manage code! <br>
+                    </span>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section class="skill-sec">
+    <section class="skill-sec" id="skillsec">
         <div class="skill-div">
-
+            <h2 class="big-text">
+                My Skills
+            </h2>
+            <table class="skills-table">
+                <tr>
+                    <td>Programming</td>
+                    <td>Python <br>
+                        Pytest <br>
+                        Flask <br>
+                        Object Oriented Programming
+                    </td>
+                </tr><tr>
+                    <td>Web Development</td>
+                    <td>HTML <br>
+                        CSS <br>
+                        JavaSript <br>
+                        NodeJS <br>
+                        Express
+                    </td>
+                </tr><tr>
+                    <td>Development</td>
+                    <td>Agile Developement <br>
+                        Test Driven Development
+                    </td>
+                </tr>
+            </table>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section class="proj-sec">
+    <section class="proj-sec" id="projsec">
         <div class="proj-div">
-
+            <h2 class="big-text">
+                My Projects
+                <div class="project-view">
+                    <div class="first-proj">SkeleCode</div>
+                    <div class="second-proj">Maze Game</div>
+                    <div class="third-proj"></div>
+                </div>
+            </h2>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section class="contact-sec">
-        <div class="contact-sec">
-
+    <section class="contact-sec" id="contactsec">
+        <div class="contact-div">
+            <h2 class="big-text">
+                Contact
+                <ul>
+                    <li>Email</li>
+                    <li>LinkedIn</li>
+                    <li>GitHub</li>
+                </ul>
+            </h2>
         </div>
     </section>
 
+    <script src="main.js"></script> 
 </body>
 </html>
