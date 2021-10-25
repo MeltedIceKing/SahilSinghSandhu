@@ -56,6 +56,7 @@ body {
 
 .about-div {
     background-color: #ffebc6;
+    color: #003844;
 }
 
 .about-flex {
@@ -90,6 +91,27 @@ body {
 
 .skill-div {
     background-color: #006c67;
+    color: #ffebc6;
+}
+
+.table-div {
+    padding-left: 13%;
+    padding-top: 5%;
+}
+
+.skills-table {
+    font-size: larger;
+    width: 30vw;
+}
+
+.skill-list {
+    padding-left: 5%;
+    padding-bottom: 5%;
+}
+
+.skill-td {
+    text-align: left;
+    vertical-align: text-top;
 }
 
 .proj-div {
